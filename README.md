@@ -24,7 +24,7 @@ corporate firewall, or in a datacenter.
 [TensorBoard.dev]: https://tensorboard.dev
 [This experiment]: https://tensorboard.dev/experiment/EDZb7XgKSBKo6Gznh3i8hg/#scalars
 
-# Usage
+# Usage (CHECK THIS)
 
 Before running TensorBoard, make sure you have generated summary data in a log
 directory by creating a summary writer:
