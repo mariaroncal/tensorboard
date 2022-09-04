@@ -33,7 +33,7 @@ export const template = html`
     }
 
     .dirs {
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 5, 0.7);
       font-size: 12px;
     }
 

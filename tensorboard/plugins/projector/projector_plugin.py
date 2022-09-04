@@ -108,7 +108,7 @@ class EmbeddingMetadata(object):
         self.column_names = []
         self.name_to_values = {}
 
-    def add_column(self, column_name, column_values):
+    def add_column(self, column_name, column_values):   # Ex: metadata.add_column("Sizes", [1,2,3])
         """Adds a named column of metadata values.
 
         Args:
@@ -228,6 +228,8 @@ def _rel_to_abs_asset_path(fpath, config_fpath):
 def _using_tf():
     """Return true if we're not using the fake TF API stub implementation."""
     return tf.__version__ != "stub"
+
+
 
 
 class ProjectorPlugin(base_plugin.TBPlugin):
@@ -367,8 +369,10 @@ class ProjectorPlugin(base_plugin.TBPlugin):
     def _augment_configs_with_checkpoint_info(self):
         for run, config in self._configs.items():
             for embedding in config.embeddings:
+                print("embedding", embedding)
                 # Normalize the name of the embeddings.
                 if embedding.tensor_name.endswith(":0"):
+                    print("entro", embedding.tensor_name )
                     embedding.tensor_name = embedding.tensor_name[:-2]
                 # Find the size of embeddings associated with a tensors file.
                 if embedding.tensor_path:
