@@ -24,6 +24,10 @@ corporate firewall, or in a datacenter.
 [TensorBoard.dev]: https://tensorboard.dev
 [This experiment]: https://tensorboard.dev/experiment/EDZb7XgKSBKo6Gznh3i8hg/#scalars
 
+# New Plugin Internship
+
+Check the file docs to find: The final internship report with everything explained, the Excels that were used in the evaluation and the Notebook that was used in order to create the Excels.
+
 # Usage (CHECK THIS)
 
 Before running TensorBoard, make sure you have generated summary data in a log
