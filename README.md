@@ -26,7 +26,27 @@ corporate firewall, or in a datacenter.
 
 # New Plugin Internship
 
-Check the file docs to find: The final internship report with everything explained, the Excels that were used in the evaluation and the Notebook that was used in order to create the Excels.
+Lately, researchers in the field of natural language processing (NLP) have been
+attracted by cross-lingual word embeddings (CLEs) since they are helpful in many
+areas. Cross-lingual word embeddings are the representations of words across languages in a shared continuous vector space. 
+Several approaches have been presented recently that make it feasible to construct
+a joint space between two or more languages, without any cross-lingual supervision.
+However, there is little we understand about this joint space. It is well known they
+have shortcomings and perform well for frequent words, but what do these spaces
+look like for the less frequent words? how about polysemous words? In order to
+answer these questions, there is a need to visualize these embeddings in a 3D space to
+analyze their limitations better. The goal of this project will then be to understand
+how CLEs are constructed and create a visualization tool. By doing this, we will not
+only improve our understanding of the embedding spaces but provide a very useful
+tool for the multilingual NLP research community.
+
+Check the file docs to find: 
+- the final internship report with everything explained
+- the Excels that were used in the evaluation 
+- the Notebook that was used in order to create the Excels
+
+Notice as well that the main changes that were done to create the new plugin were done in the file projector_demo.py which path is: tensorboard/tensorboard/plugins/projector/projector_demo.py
+
 
 # Usage (CHECK THIS)
 
