@@ -24,7 +24,7 @@ corporate firewall, or in a datacenter.
 [TensorBoard.dev]: https://tensorboard.dev
 [This experiment]: https://tensorboard.dev/experiment/EDZb7XgKSBKo6Gznh3i8hg/#scalars
 
-# New Plugin Internship
+# New Plugin for Tensorboard ( Internship in collaboration with LT3 )
 
 Lately, researchers in the field of natural language processing (NLP) have been
 attracted by cross-lingual word embeddings (CLEs) since they are helpful in many
@@ -46,6 +46,10 @@ Check the file docs to find:
 - the Notebook that was used in order to create the Excels
 
 Notice as well that the main changes that were done to create the new plugin were done in the file projector_demo.py which path is: tensorboard/tensorboard/plugins/projector/projector_demo.py
+
+### CODE EXPLANATION:
+
+Several modifications were done in the code in order to create the new plugin.
 
 
 # Usage (CHECK THIS)
