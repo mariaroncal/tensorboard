@@ -47,33 +47,6 @@ Check the file docs to find:
 
 Notice as well that the main changes that were done to create the new plugin were done in the file projector_demo.py which path is: tensorboard/tensorboard/plugins/projector/projector_demo.py
 
-### CODE EXPLANATION:
-
-Several modifications were done in the code in order to create the new plugin. (Check projector_demo.py).
-
-1) Notice that we will do the experiments with embeddings in 3 languages: Spanish, English, and French.  First of all, we need to load the embeddings in the 3
-languages. This can be done by calling the function load_vec with its 2 parameters: the path of the embeddings in a particular language and the maximum
-number of embeddings we want to load. For example, load_vec(spanish_path,
-100) will download 100 Spanish word embeddings.
-
-2. Once we have our vocabulary with their tensors, a language mark is added
-to clarify the language of each embedding. The mark "_en" is added if the
-embedding is an English word, "_es" is added for Spanish, and "_fr" is for
-French. The reason why this was done was that some word embeddings
-appeared in several languages and we wanted to make a distinction between
-the language the word was coming from.
-
-3. Now, we create a common dictionary with all the words as keys of the dictionary,
-and the tensors as values. All the words in the 3 languages are included in this
-dictionary.
-
-4. Since TensorBoard reads tensors and metadata from the logs of your TensorFlow
-projects, a metadata file needs to be created. The metadata should be stored in
-a separate file and its format should be a tsv file. The first line should contain
-the column headers and the subsequent lines should contain the metadata
-values. In this case, the 2 columns are the word and its language. 
-
-
 # Usage (CHECK THIS)
 
 Before running TensorBoard, make sure you have generated summary data in a log
